@@ -1,0 +1,35 @@
+RewriteEngine On
+php_flag display_startup_errors On
+php_flag display_errors On
+php_flag html_errors On
+php_value error_reporting 2047
+
+# Quickregister Rules
+ErrorDocument 400 /404.php
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+
+
+RewriteRule ^lista(|/)$ ./lista.php
+RewriteRule ^borrar(|/)$ ./borrar.php
+RewriteRule ^borrarc(|/)$ ./borrarc.php
+RewriteRule ^registro(|/)$ ./registro.php
+RewriteRule ^qr(|/)$ ./qr.php
+RewriteRule ^login(|/)$ ./login.php
+RewriteRule ^salir(|/)$ ./salir.php
+RewriteRule ^editar(|/)$ ./editar.php
+RewriteRule ^editarc(|/)$ ./editarc.php
+RewriteRule ^listaadmin(|/)$ ./listaadmin.php
+RewriteRule ^ajuegos(|/)$ ./ajuegos.php
+RewriteRule ^acomidas(|/)$ ./acomida.php
+RewriteRule ^comida(|/)$ ./comida.php
+RewriteRule ^listaadminc(|/)$ ./listaadminc.php
+
+
+
+
+
+
+
